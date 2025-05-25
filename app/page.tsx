@@ -153,7 +153,7 @@ export default function Page() {
           transition={{ delay: 0.6, duration: 0.8 }}
         >
           <h1 className="text-3xl sm:text-4xl font-extrabold font-sans">
-            Automate Your Workflow. Accelerate Your Business.
+            Harvesting possibility through innovation and technology
           </h1>
           <p className="text-base sm:text-lg text-gray-200 max-w-2xl mx-auto font-normal">
             Nexora uses AI to streamline repetitive tasks, optimize team
