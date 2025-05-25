@@ -6,6 +6,18 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import {
+  Briefcase,
+  Code2,
+  Lightbulb,
+  Globe,
+  Users,
+  Rocket,
+  Building2,
+  ShieldCheck,
+  UserCheck,
+  Sparkles,
+} from "lucide-react";
 
 export default function Page() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -200,7 +212,8 @@ export default function Page() {
           </h2>
           <div className="grid gap-4 sm:grid-cols-2">
             <Card>
-              <CardContent className="p-4">
+              <CardContent className="p-4 flex flex-col items-center">
+                <Briefcase size={40} />
                 <h3 className="text-lg sm:text-xl font-semibold font-sans">
                   Business Optimisation Solutions
                 </h3>
@@ -212,7 +225,8 @@ export default function Page() {
               </CardContent>
             </Card>
             <Card>
-              <CardContent className="p-4">
+              <CardContent className="p-4 flex flex-col items-center">
+                <Code2 size={40} />
                 <h3 className="text-lg sm:text-xl font-semibold font-sans">
                   Custom Software Development
                 </h3>
@@ -223,7 +237,8 @@ export default function Page() {
               </CardContent>
             </Card>
             <Card>
-              <CardContent className="p-4">
+              <CardContent className="p-4 flex flex-col items-center">
+                <Lightbulb size={40} />
                 <h3 className="text-lg sm:text-xl font-semibold font-sans">
                   Technology Innovation Support
                 </h3>
@@ -235,7 +250,8 @@ export default function Page() {
               </CardContent>
             </Card>
             <Card>
-              <CardContent className="p-4">
+              <CardContent className="p-4 flex flex-col items-center">
+                <Globe size={40} />
                 <h3 className="text-lg sm:text-xl font-semibold font-sans">
                   End-to-End Digital Solutions
                 </h3>
@@ -247,7 +263,8 @@ export default function Page() {
               </CardContent>
             </Card>
             <Card>
-              <CardContent className="p-4">
+              <CardContent className="p-4 flex flex-col items-center">
+                <Users size={40} />
                 <h3 className="text-lg sm:text-xl font-semibold font-sans">
                   Tech Event Hosting & Community Engagement
                 </h3>
@@ -259,7 +276,8 @@ export default function Page() {
               </CardContent>
             </Card>
             <Card>
-              <CardContent className="p-4">
+              <CardContent className="p-4 flex flex-col items-center">
+                <Rocket size={40} />
                 <h3 className="text-lg sm:text-xl font-semibold font-sans">
                   Innovation Mentorship & Tech Incubation{" "}
                 </h3>
@@ -284,45 +302,49 @@ export default function Page() {
           </h2>
           <div className="grid gap-4 sm:grid-cols-4">
             <Card className="bg-green-900">
-              <CardContent className="p-4 text-center flex flex-col gap-3">
+              <CardContent className="p-4 text-center flex flex-col items-center gap-3">
+                <Building2 className="text-white" size={40} />
                 <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
                   Businesses
                 </h3>
                 <p className="text-white">
-                  seeking to optimise their systems and elevate performance
+                  Seeking to optimise their systems and elevate performance
                   through tailored software solutions.
                 </p>
               </CardContent>
             </Card>
             <Card className="bg-green-900">
-              <CardContent className="p-4 text-center flex flex-col gap-3">
+              <CardContent className="p-4 text-center flex flex-col items-center gap-3">
+                <ShieldCheck className="text-white" size={40} />
                 <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
                   Industry Leaders
                 </h3>
                 <p className="text-white">
-                  aiming to transform or refine the technologies and systems
+                  Aiming to transform or refine the technologies and systems
                   driving their sectors forward.
                 </p>
               </CardContent>
             </Card>
             <Card className="bg-green-900">
-              <CardContent className="p-4 text-center flex flex-col gap-3">
+              <CardContent className="p-4 text-center flex flex-col items-center gap-3">
+                <UserCheck className="text-white" size={40} />
                 <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
                   Entrepreneurs
                 </h3>
                 <p className="text-white">
-                  bringing bold, ground-breaking innovations to life through
+                  Bringing bold, ground-breaking innovations to life through
                   strategic tech development.
                 </p>
               </CardContent>
             </Card>
             <Card className="bg-green-900">
-              <CardContent className="p-4 text-center flex flex-col gap-3">
+              <CardContent className="p-4 text-center flex flex-col items-center gap-3">
+                <Sparkles className="text-white" size={40} />
                 <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
                   Visionaries
                 </h3>
                 <p className="text-white">
-                  with powerful ideas that hold the potential to reshape
+                  With powerful ideas that hold the potential to reshape
                   industries and create lasting impact.
                 </p>
               </CardContent>
