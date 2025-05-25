@@ -153,7 +153,7 @@ export default function Page() {
       {/* About Us */}
       <div
         id="about"
-        className="bg-green-50 min-h-screen flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-64 py-12"
+        className="bg-green-50 min-h-screen flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-64 py-32 md:py-12"
       >
         <section className="space-y-4">
           <h2 className="text-2xl text-center sm:text-3xl font-semibold font-sans">
@@ -192,7 +192,7 @@ export default function Page() {
       {/* Solutions */}
       <div
         id="solutions"
-        className="bg-green-900  min-h-screen flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-64 py-12"
+        className="bg-green-900 min-h-screen flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-64 py-32 md:py-12"
       >
         <section>
           <h2 className="text-2xl text-white text-center sm:text-3xl font-semibold font-sans mb-6">
@@ -276,7 +276,7 @@ export default function Page() {
 
       <div
         id="platform"
-        className="bg-green-50 min-h-[400px] flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40 py-12"
+        className="bg-green-50 min-h-[400px] flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40 py-32 md:py-12"
       >
         <section>
           <h2 className="text-2xl text-center sm:text-3xl font-semibold font-sans mb-6">
