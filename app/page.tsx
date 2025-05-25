@@ -301,7 +301,7 @@ export default function Page() {
             Our Clientele
           </h2>
           <div className="grid gap-4 sm:grid-cols-4">
-            <Card className="bg-green-900">
+            <Card className="bg-green-800">
               <CardContent className="p-4 text-center flex flex-col items-center gap-3">
                 <Building2 className="text-white" size={40} />
                 <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
@@ -313,7 +313,7 @@ export default function Page() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-green-900">
+            <Card className="bg-green-800">
               <CardContent className="p-4 text-center flex flex-col items-center gap-3">
                 <ShieldCheck className="text-white" size={40} />
                 <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
@@ -325,7 +325,7 @@ export default function Page() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-green-900">
+            <Card className="bg-green-800">
               <CardContent className="p-4 text-center flex flex-col items-center gap-3">
                 <UserCheck className="text-white" size={40} />
                 <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
@@ -337,7 +337,7 @@ export default function Page() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-green-900">
+            <Card className="bg-green-800">
               <CardContent className="p-4 text-center flex flex-col items-center gap-3">
                 <Sparkles className="text-white" size={40} />
                 <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
