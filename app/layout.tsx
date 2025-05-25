@@ -6,9 +6,9 @@ import type { Metadata } from "next";
 import { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Nexora | AI-Powered Automation for Business",
+  title: "iKore | AI-Powered Automation for Business",
   description:
-    "Nexora helps you automate workflows, streamline operations, and grow faster with AI.",
+    "iKore helps you automate workflows, streamline operations, and grow faster with AI.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
