@@ -102,13 +102,6 @@ export default function Page() {
               Clientele
             </a>
             <a
-              href="#case-studies"
-              className="hover:underline"
-              onClick={() => setMenuOpen(false)}
-            >
-              Case Studies
-            </a>
-            <a
               href="#contact"
               className="hover:underline"
               onClick={() => setMenuOpen(false)}
