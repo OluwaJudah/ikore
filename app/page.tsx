@@ -4,22 +4,24 @@ import "@fontsource/eb-garamond";
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Menu } from "lucide-react";
+import { Leaf, Menu, TrendingUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Briefcase,
   Code2,
   Lightbulb,
   Globe,
-  Users,
   Rocket,
   Building2,
   ShieldCheck,
   UserCheck,
   Sparkles,
+  Users,
+  Target,
 } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import Link from "next/link";
+import ContactForm from "@/components/ContactForm";
 
 export default function Page() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -55,7 +57,7 @@ export default function Page() {
             Home
           </Link>
           <Link href="#about" className="hover:underline">
-            About
+            About Us
           </Link>
           <Link href="#solutions" className="hover:underline">
             Solutions
@@ -101,7 +103,7 @@ export default function Page() {
               className="hover:underline"
               onClick={() => setMenuOpen(false)}
             >
-              About
+              About Us
             </Link>
             <Link
               href="#solutions"
@@ -143,7 +145,7 @@ export default function Page() {
           transition={{ delay: 0.3, duration: 0.8, type: "spring" }}
         >
           <h1 className="text-white font-extrabold font-sans text-[8rem] sm:text-[12rem] md:text-[18rem] lg:text-[24rem] xl:text-[32rem] leading-[1]">
-            iKoré
+            iKore
           </h1>
         </motion.div>
         <motion.section
@@ -171,39 +173,62 @@ export default function Page() {
       <AnimatedSection>
         <div
           id="about"
-          className="bg-green-50 min-h-screen flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-64 py-32 md:py-12"
+          className="bg-green-50 min-h-[400px] flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40 py-32 md:py-28"
         >
-          <section className="space-y-4">
-            <h2 className="text-2xl text-center sm:text-3xl font-semibold font-sans">
-              Who We Are
+          <section>
+            <h2 className="text-2xl text-center sm:text-3xl font-semibold font-sans mb-6">
+              About Us
             </h2>
-            <p className="font-light text-base sm:text-lg">
-              Before partnering with us, we invite you to explore the values
-              that define the core of who we are, the goals that drives our
-              work, and the kind of partnerships we strive to build.
-            </p>{" "}
-            <h2 className="text-2xl text-center sm:text-3xl font-semibold font-sans">
-              Our Core
-            </h2>
-            <p className="font-light text-base sm:text-lg">
-              Rooted in the meaning of "Ikore" — harvest — we at Ikore Solutions
-              and Technology believe that the Lord is the giver of every good
-              harvest. Guided by this truth, we are passionate about crafting
-              innovative technologies that inspire growth, transform lives, and
-              empower businesses. ​ Backed by a team of professionals we serve
-              industry leaders, entrepreneurs, businesses, and individuals with
-              bold ideas — delivering tailored digital solutions that turn
-              visions into reality and fuel lasting impact.{" "}
-            </p>
-            <h2 className="text-2xl text-center sm:text-3xl font-semibold font-sans">
-              Our Goal
-            </h2>
-            <p className="font-light text-base sm:text-lg">
-              At Ikore Solutions and Technology, our goal is to empower our
-              clients to create innovative technological solutions that elevate
-              customer experiences, optimise operational systems, and unlock
-              their highest levels of efficiency, effectiveness, and influence.
-            </p>
+            <div className="grid gap-4 sm:grid-cols-3">
+              <Card className="bg-green-800">
+                <CardContent className="p-4 text-center flex flex-col items-center gap-3">
+                  <Users className="text-white" size={40} />
+                  <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
+                    Who We Are
+                  </h3>
+                  <p className="text-white">
+                    Before partnering with us, we invite you to explore the
+                    values that define the core of who we are, the goals that
+                    drives our work, and the kind of partnerships we strive to
+                    build.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="bg-green-800">
+                <CardContent className="p-4 text-center flex flex-col items-center gap-3">
+                  <Leaf className="text-white" size={40} />
+                  <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
+                    Our Core
+                  </h3>
+                  <p className="text-white">
+                    Rooted in the meaning of "Ikore" — harvest — we at Ikore
+                    Solutions and Technology believe that the Lord is the giver
+                    of every good harvest. Guided by this truth, we are
+                    passionate about crafting innovative technologies that
+                    inspire growth, transform lives, and empower businesses. ​
+                    Backed by a team of professionals we serve industry leaders,
+                    entrepreneurs, businesses, and individuals with bold ideas —
+                    delivering tailored digital solutions that turn visions into
+                    reality and fuel lasting impact.{" "}
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="bg-green-800">
+                <CardContent className="p-4 text-center flex flex-col items-center gap-3">
+                  <Target className="text-white" size={40} />
+                  <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
+                    Our Goal
+                  </h3>
+                  <p className="text-white">
+                    At Ikore Solutions and Technology, our goal is to empower
+                    our clients to create innovative technological solutions
+                    that elevate customer experiences, optimise operational
+                    systems, and unlock their highest levels of efficiency,
+                    effectiveness, and influence.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </section>
         </div>
       </AnimatedSection>
@@ -305,7 +330,7 @@ export default function Page() {
       <AnimatedSection>
         <div
           id="platform"
-          className="bg-green-50 min-h-[400px] flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40 py-32 md:py-12"
+          className="bg-green-50 min-h-[400px] flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40 py-32 md:py-28"
         >
           <section>
             <h2 className="text-2xl text-center sm:text-3xl font-semibold font-sans mb-6">
@@ -366,74 +391,39 @@ export default function Page() {
       </AnimatedSection>
 
       {/* Contact Section */}
-      <AnimatedSection>
-        <section
-          id="contact"
-          className="bg-green-900 min-h-screen pt-40 px-4 sm:px-6 md:px-20 lg:px-32 py-16 space-y-12"
-        >
-          <h2 className="text-4xl font-bold font-sans text-center text-white">
-            Contact Us
-          </h2>
-          <p className="text-center text-gray-600  text-white">
-            To get in contact with us fill in the form and we'll get back to
-            you.
-          </p>
-          <form className="max-w-2xl mx-auto space-y-6">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full p-3 border rounded-md"
-              required
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full p-3 border rounded-md"
-              required
-            />
-            <textarea
-              placeholder="Your Message"
-              className="w-full p-3 border rounded-md h-32"
-              required
-            ></textarea>
-            <Button type="submit">Send Message</Button>
-          </form>
-        </section>
-      </AnimatedSection>
+      <ContactForm />
 
       {/* Footer */}
-      <AnimatedSection>
-        <footer className="bg-green-900 text-white py-8 px-4 sm:px-6 md:px-20 lg:px-32 space-y-4">
-          <div className="text-center">
-            <p className="font-semibold">
-              IKORE Solutions and Technology​ PTY (LTD)
-            </p>
-            <p>
-              Corner Tyrwhitt and, 24 Cradock Ave, Rosebank, Johannesburg, 2196
-            </p>
-            <p>info@ikoresolutionsandtech.com</p>
-          </div>
-          <div className="flex justify-center gap-4">
-            <Link href="#" className="underline">
-              Privacy Policy
+      <footer className="bg-green-900 text-white py-8 px-4 sm:px-6 md:px-20 lg:px-32 space-y-4">
+        <div className="text-center">
+          <p className="font-semibold">
+            IKORE Solutions and Technology​ PTY (LTD)
+          </p>
+          <p>
+            Corner Tyrwhitt and, 24 Cradock Ave, Rosebank, Johannesburg, 2196
+          </p>
+          <p>info@ikoresolutionsandtech.com</p>
+        </div>
+        <div className="flex justify-center gap-4">
+          <Link href="#" className="underline">
+            Privacy Policy
+          </Link>
+          <Link href="#" className="underline">
+            POPIA
+          </Link>
+          <div className="flex gap-4">
+            <Link href="#" aria-label="Twitter">
+              🐦
             </Link>
-            <Link href="#" className="underline">
-              POPIA
+            <Link href="#" aria-label="LinkedIn">
+              💼
             </Link>
-            <div className="flex gap-4">
-              <Link href="#" aria-label="Twitter">
-                🐦
-              </Link>
-              <Link href="#" aria-label="LinkedIn">
-                💼
-              </Link>
-              <Link href="#" aria-label="Facebook">
-                📘
-              </Link>
-            </div>
+            <Link href="#" aria-label="Facebook">
+              📘
+            </Link>
           </div>
-        </footer>
-      </AnimatedSection>
+        </div>
+      </footer>
     </div>
   );
 }
