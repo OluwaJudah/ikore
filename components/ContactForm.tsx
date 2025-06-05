@@ -30,7 +30,7 @@ const ContactForm = () => {
     <AnimatedSection>
       <section
         id="contact"
-        className="bg-green-900 min-h-screen pt-40 px-4 sm:px-6 md:px-20 lg:px-32 py-16 space-y-12"
+        className="bg-green-900 min-h-screen pt-40 px-4 sm:px-6 md:px-20 lg:px-32 py-16 space-y-12 scroll-mt-12"
       >
         <h2 className="text-4xl font-bold font-sans text-center text-white">
           Contact Us
@@ -67,7 +67,7 @@ const ContactForm = () => {
           ></textarea>
           <button
             type="submit"
-            className="bg-white text-green-900 font-semibold px-6 py-2 rounded"
+            className="bg-white text-green-900 font-light px-6 py-2 rounded"
           >
             Send Message
           </button>

@@ -11,7 +11,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['"DM Sans"', "ui-sans-serif", "system-ui"],
-        serif: ['"EB Garamond"', "serif"],
+        serif: ["Montserrat", "sans-serif"],
       },
       colors: {
         background: "hsl(var(--background))",

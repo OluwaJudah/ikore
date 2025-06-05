@@ -1,10 +1,8 @@
 "use client";
-import "@fontsource-variable/dm-sans";
-import "@fontsource/eb-garamond";
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Leaf, Menu, TrendingUp } from "lucide-react";
+import { Leaf, Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Briefcase,
@@ -157,7 +155,7 @@ export default function Page() {
           <h1 className="text-3xl sm:text-4xl font-extrabold font-sans">
             Harvesting possibility through innovation and technology
           </h1>
-          <p className="text-base sm:text-lg text-gray-200 max-w-2xl mx-auto font-normal">
+          <p className="text-base sm:text-lg text-gray-200 max-w-2xl mx-auto font-normal font-montserrat">
             Nexora uses AI to streamline repetitive tasks, optimize team
             performance, and unlock your company's full potential — all from one
             intuitive platform.
@@ -173,7 +171,7 @@ export default function Page() {
       <AnimatedSection>
         <div
           id="about"
-          className="bg-green-50 min-h-[400px] flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40 py-32 md:py-28"
+          className="bg-green-50 min-h-[400px] flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40 py-32 md:py-28 scroll-mt-12"
         >
           <section>
             <h2 className="text-2xl text-center sm:text-3xl font-semibold font-sans mb-6">
@@ -186,7 +184,7 @@ export default function Page() {
                   <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
                     Who We Are
                   </h3>
-                  <p className="text-white">
+                  <p className="text-white font-light text-sm">
                     Before partnering with us, we invite you to explore the
                     values that define the core of who we are, the goals that
                     drives our work, and the kind of partnerships we strive to
@@ -200,7 +198,7 @@ export default function Page() {
                   <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
                     Our Core
                   </h3>
-                  <p className="text-white">
+                  <p className="text-white font-light text-sm">
                     Rooted in the meaning of "Ikore" — harvest — we at Ikore
                     Solutions and Technology believe that the Lord is the giver
                     of every good harvest. Guided by this truth, we are
@@ -219,7 +217,7 @@ export default function Page() {
                   <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
                     Our Goal
                   </h3>
-                  <p className="text-white">
+                  <p className="text-white font-light text-sm">
                     At Ikore Solutions and Technology, our goal is to empower
                     our clients to create innovative technological solutions
                     that elevate customer experiences, optimise operational
@@ -237,20 +235,20 @@ export default function Page() {
       <AnimatedSection>
         <div
           id="solutions"
-          className="bg-green-900 min-h-screen flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-64 py-32 md:py-12"
+          className="bg-green-900 min-h-screen flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-64 py-32 md:py-12 scroll-mt-12"
         >
           <section>
             <h2 className="text-2xl text-white text-center sm:text-3xl font-semibold font-sans mb-6">
               Our Solutions
             </h2>
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2 text-center">
               <Card>
-                <CardContent className="p-4 flex flex-col items-center">
+                <CardContent className="p-4 flex flex-col items-center gap-3">
                   <Briefcase size={40} />
                   <h3 className="text-lg sm:text-xl font-semibold font-sans">
                     Business Optimisation Solutions
                   </h3>
-                  <p>
+                  <p className="font-light text-sm">
                     We design and implement smart software and system solutions
                     that streamline operations, boost productivity, and drive
                     business growth..
@@ -258,12 +256,12 @@ export default function Page() {
                 </CardContent>
               </Card>
               <Card>
-                <CardContent className="p-4 flex flex-col items-center">
+                <CardContent className="p-4 flex flex-col items-center gap-3">
                   <Code2 size={40} />
                   <h3 className="text-lg sm:text-xl font-semibold font-sans">
                     Custom Software Development
                   </h3>
-                  <p>
+                  <p className="font-light text-sm">
                     Bring your ideas to life with tailored software solutions
                     built to meet your unique needs and push your vision
                     forward.
@@ -271,12 +269,12 @@ export default function Page() {
                 </CardContent>
               </Card>
               <Card>
-                <CardContent className="p-4 flex flex-col items-center">
+                <CardContent className="p-4 flex flex-col items-center gap-3">
                   <Lightbulb size={40} />
                   <h3 className="text-lg sm:text-xl font-semibold font-sans">
                     Technology Innovation Support
                   </h3>
-                  <p>
+                  <p className="font-light text-sm">
                     From concept to creation, we partner with you to develop
                     cutting-edge technology that transforms industries and sets
                     new standards.
@@ -284,12 +282,12 @@ export default function Page() {
                 </CardContent>
               </Card>
               <Card>
-                <CardContent className="p-4 flex flex-col items-center">
+                <CardContent className="p-4 flex flex-col items-center gap-3">
                   <Globe size={40} />
                   <h3 className="text-lg sm:text-xl font-semibold font-sans">
                     End-to-End Digital Solutions
                   </h3>
-                  <p>
+                  <p className="font-light text-sm">
                     Whether you're enhancing existing systems or building from
                     scratch, we deliver end-to-end digital strategies that power
                     success.
@@ -297,12 +295,12 @@ export default function Page() {
                 </CardContent>
               </Card>
               <Card>
-                <CardContent className="p-4 flex flex-col items-center">
+                <CardContent className="p-4 flex flex-col items-center gap-3">
                   <Users size={40} />
                   <h3 className="text-lg sm:text-xl font-semibold font-sans">
                     Tech Event Hosting & Community Engagement
                   </h3>
-                  <p>
+                  <p className="font-light text-sm">
                     We curate and facilitate dynamic technology showcases,
                     hackathons and sessions that bridge the gap between users
                     and innovation.{" "}
@@ -310,12 +308,12 @@ export default function Page() {
                 </CardContent>
               </Card>
               <Card>
-                <CardContent className="p-4 flex flex-col items-center">
+                <CardContent className="p-4 flex flex-col items-center gap-3">
                   <Rocket size={40} />
                   <h3 className="text-lg sm:text-xl font-semibold font-sans">
                     Innovation Mentorship & Tech Incubation{" "}
                   </h3>
-                  <p>
+                  <p className="font-light text-sm">
                     Through mentorship, strategic guidance, and tailored
                     technical support, we help individuals and early-stage teams
                     develop viable, impactful tech solutions.
@@ -330,7 +328,7 @@ export default function Page() {
       <AnimatedSection>
         <div
           id="platform"
-          className="bg-green-50 min-h-[400px] flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40 py-32 md:py-28"
+          className="bg-green-50 min-h-[400px] flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40 py-32 md:py-28 scroll-mt-14"
         >
           <section>
             <h2 className="text-2xl text-center sm:text-3xl font-semibold font-sans mb-6">
@@ -343,7 +341,7 @@ export default function Page() {
                   <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
                     Businesses
                   </h3>
-                  <p className="text-white">
+                  <p className="text-white font-light text-sm">
                     Seeking to optimise their systems and elevate performance
                     through tailored software solutions.
                   </p>
@@ -355,7 +353,7 @@ export default function Page() {
                   <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
                     Industry Leaders
                   </h3>
-                  <p className="text-white">
+                  <p className="text-white font-light text-sm">
                     Aiming to transform or refine the technologies and systems
                     driving their sectors forward.
                   </p>
@@ -367,7 +365,7 @@ export default function Page() {
                   <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
                     Entrepreneurs
                   </h3>
-                  <p className="text-white">
+                  <p className="text-white font-light text-sm">
                     Bringing bold, ground-breaking innovations to life through
                     strategic tech development.
                   </p>
@@ -379,7 +377,7 @@ export default function Page() {
                   <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
                     Visionaries
                   </h3>
-                  <p className="text-white">
+                  <p className="text-white font-light text-sm">
                     With powerful ideas that hold the potential to reshape
                     industries and create lasting impact.
                   </p>
@@ -395,7 +393,7 @@ export default function Page() {
 
       {/* Footer */}
       <footer className="bg-green-900 text-white py-8 px-4 sm:px-6 md:px-20 lg:px-32 space-y-4">
-        <div className="text-center">
+        <div className="text-center font-montserrat">
           <p className="font-semibold">
             IKORE Solutions and Technology​ PTY (LTD)
           </p>
