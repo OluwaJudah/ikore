@@ -156,13 +156,17 @@ export default function Page() {
             Harvesting possibility through innovation and technology
           </h1>
           <p className="text-base sm:text-lg text-gray-200 max-w-2xl mx-auto font-normal font-montserrat">
-            Nexora uses AI to streamline repetitive tasks, optimize team
-            performance, and unlock your company's full potential — all from one
-            intuitive platform.
+            We invite you to partner with us and explore the values that define
+            the core of who we are, the goals that drives our work, and the kind
+            of partnerships we strive to build.
           </p>
           <div className="flex justify-center gap-4">
-            <Button>Request a Demo</Button>
-            <Button variant="outline">Start Free Trial</Button>
+            <Link href="#contact">
+              <Button>Request a Demo</Button>
+            </Link>
+            <Link href="#contact">
+              <Button variant="outline">Get Started</Button>
+            </Link>
           </div>
         </motion.section>
       </motion.div>
@@ -180,15 +184,16 @@ export default function Page() {
             <div className="grid gap-4 sm:grid-cols-3">
               <Card className="bg-green-800">
                 <CardContent className="p-4 text-center flex flex-col items-center gap-3">
-                  <Users className="text-white" size={40} />
+                  <Target className="text-white" size={40} />
                   <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
-                    Who We Are
+                    Our Goal
                   </h3>
                   <p className="text-white font-light text-sm">
-                    Before partnering with us, we invite you to explore the
-                    values that define the core of who we are, the goals that
-                    drives our work, and the kind of partnerships we strive to
-                    build.
+                    At Ikore Solutions and Technology, our goal is to empower
+                    our clients to create innovative technological solutions
+                    that elevate customer experiences, optimise operational
+                    systems, and unlock their highest levels of efficiency,
+                    effectiveness, and influence.
                   </p>
                 </CardContent>
               </Card>
@@ -213,16 +218,16 @@ export default function Page() {
               </Card>
               <Card className="bg-green-800">
                 <CardContent className="p-4 text-center flex flex-col items-center gap-3">
-                  <Target className="text-white" size={40} />
+                  <Users className="text-white" size={40} />
                   <h3 className="text-lg text-white sm:text-xl font-semibold font-sans">
-                    Our Goal
+                    Our Methodology
                   </h3>
                   <p className="text-white font-light text-sm">
-                    At Ikore Solutions and Technology, our goal is to empower
-                    our clients to create innovative technological solutions
-                    that elevate customer experiences, optimise operational
-                    systems, and unlock their highest levels of efficiency,
-                    effectiveness, and influence.
+                    We begin by listening — to businesses needing smarter
+                    systems, and to visionaries with bold ideas. Then with our
+                    capable team we design, build, and nurture the right
+                    innovations that bring ideas to life and help systems flow
+                    with purpose.
                   </p>
                 </CardContent>
               </Card>
