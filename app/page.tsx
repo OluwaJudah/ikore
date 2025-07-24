@@ -20,6 +20,7 @@ import {
 import { AnimatedSection } from "@/components/AnimatedSection";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
+import Image from "next/image";
 
 export default function Page() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -47,8 +48,8 @@ export default function Page() {
     <div className="font-serif">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full bg-white shadow z-50 py-4 px-6 flex justify-between items-center font-sans">
-        <Link href="/" className="text-lg font-bold">
-          iKore
+        <Link href="/" className="text-lg font-bold h-[20px] flex items-center">
+          <Image src="/Logo.png" alt="El-Kore Logo" width={100} height={10} />
         </Link>
         <div className="hidden md:flex gap-6">
           <Link href="#hero" className="hover:underline">
@@ -137,13 +138,13 @@ export default function Page() {
         transition={{ duration: 1.2 }}
       >
         <motion.div
-          className="flex justify-center items-center gap-8 px-4 sm:px-12 md:px-20 lg:px-40 xl:px-64"
+          className="flex justify-center items-center gap-8 px-2 sm:px-0 md:px-0 lg:px-5 xl:px-0"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8, type: "spring" }}
         >
-          <h1 className="text-white font-extrabold font-sans text-[8rem] sm:text-[12rem] md:text-[18rem] lg:text-[24rem] xl:text-[32rem] leading-[1]">
-            iKore
+          <h1 className="text-white font-extrabold font-sans text-[6rem] sm:text-[10rem] md:text-[14rem] lg:text-[18rem] xl:text-[22rem] leading-[1]">
+            El-Kore
           </h1>
         </motion.div>
         <motion.section
@@ -156,9 +157,8 @@ export default function Page() {
             Harvesting possibility through innovation and technology
           </h1>
           <p className="text-base sm:text-lg text-gray-200 max-w-2xl mx-auto font-normal font-montserrat">
-            We invite you to partner with us and explore the values that define
-            the core of who we are, the goals that drives our work, and the kind
-            of partnerships we strive to build.
+            We invite you to partner with us and explore the possibilities of
+            creation utilising technology and innovation.
           </p>
           <div className="flex justify-center gap-4">
             <Link href="#contact">
@@ -189,11 +189,11 @@ export default function Page() {
                     Our Goal
                   </h3>
                   <p className="text-white font-light text-sm">
-                    At Ikore Solutions and Technology, our goal is to empower
-                    our clients to create innovative technological solutions
-                    that elevate customer experiences, optimise operational
-                    systems, and unlock their highest levels of efficiency,
-                    effectiveness, and influence.
+                    At El-Kore Tech, our goal is to empower our clients to
+                    create innovative technological solutions that elevate
+                    customer experiences, optimise operational systems, and
+                    unlock their highest levels of efficiency, effectiveness,
+                    and influence.
                   </p>
                 </CardContent>
               </Card>
@@ -204,15 +204,14 @@ export default function Page() {
                     Our Core
                   </h3>
                   <p className="text-white font-light text-sm">
-                    Rooted in the meaning of "Ikore" — harvest — we at Ikore
-                    Solutions and Technology believe that the Lord is the giver
-                    of every good harvest. Guided by this truth, we are
-                    passionate about crafting innovative technologies that
-                    inspire growth, transform lives, and empower businesses. ​
-                    Backed by a team of professionals we serve industry leaders,
-                    entrepreneurs, businesses, and individuals with bold ideas —
-                    delivering tailored digital solutions that turn visions into
-                    reality and fuel lasting impact.{" "}
+                    Our identity is rooted in the belief that the Lord — El —
+                    has released His harvest, or Ikore. Guided by this belief,
+                    we are passionate about crafting innovative technologies
+                    that inspire growth, transform lives, and empower
+                    businesses. ​ Backed by a team of professionals we serve
+                    industry leaders, entrepreneurs, businesses, and individuals
+                    with bold ideas — delivering tailored digital solutions that
+                    turn visions into reality and fuel lasting impact.
                   </p>
                 </CardContent>
               </Card>
@@ -400,12 +399,12 @@ export default function Page() {
       <footer className="bg-green-900 text-white py-8 px-4 sm:px-6 md:px-20 lg:px-32 space-y-4">
         <div className="text-center font-montserrat">
           <p className="font-semibold">
-            IKORE Solutions and Technology​ PTY (LTD)
+            IKORE Solutions and Technology​ PTY (LTD) Trading as El-Kore Tech{" "}
           </p>
           <p>
             Corner Tyrwhitt and, 24 Cradock Ave, Rosebank, Johannesburg, 2196
           </p>
-          <p>info@ikoresolutionsandtech.com</p>
+          <p>info@elkoretech.com</p>
         </div>
         <div className="flex justify-center gap-4">
           <Link href="#" className="underline">
