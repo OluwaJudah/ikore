@@ -21,6 +21,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 export default function Page() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -396,36 +397,7 @@ export default function Page() {
       <ContactForm />
 
       {/* Footer */}
-      <footer className="bg-green-900 text-white py-8 px-4 sm:px-6 md:px-20 lg:px-32 space-y-4">
-        <div className="text-center font-montserrat">
-          <p className="font-semibold">
-            IKORE Solutions and Technology​ PTY (LTD) Trading as El-Kore Tech{" "}
-          </p>
-          <p>
-            Corner Tyrwhitt and, 24 Cradock Ave, Rosebank, Johannesburg, 2196
-          </p>
-          <p>info@elkoretech.com</p>
-        </div>
-        <div className="flex justify-center gap-4">
-          <Link href="#" className="underline">
-            Privacy Policy
-          </Link>
-          <Link href="#" className="underline">
-            POPIA
-          </Link>
-          <div className="flex gap-4">
-            <Link href="#" aria-label="Twitter">
-              🐦
-            </Link>
-            <Link href="#" aria-label="LinkedIn">
-              💼
-            </Link>
-            <Link href="#" aria-label="Facebook">
-              📘
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
