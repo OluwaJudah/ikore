@@ -37,24 +37,27 @@ const Footer = () => {
           >
             <motion.div
               ref={modalRef}
-              className="bg-white rounded-lg shadow-lg p-6 max-w-xl w-full relative"
+              className="bg-white rounded-lg shadow-lg relative w-full max-w-xl max-h-[90vh] overflow-y-auto p-6 md:p-8"
               initial={{ y: -30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -30, opacity: 0 }}
               transition={{ duration: 0.3 }}
             >
+              {/* Close Button */}
               <button
                 onClick={handleCloseModal}
                 className="absolute top-2 right-4 text-gray-600 text-xl font-bold hover:text-red-500"
               >
                 ✕
               </button>
+
+              {/* Modal Title */}
               <h2 className="text-xl font-bold mb-4 text-green-900">
-                {modalContent === "privacy"
-                  ? "Privacy Policy"
-                  : "POPIA Disclaimer"}
+                {modalContent === "privacy" ? "Privacy Policy" : "POPIA Notice"}
               </h2>
-              <p className="text-gray-700 font-montserrat text-sm leading-relaxed">
+
+              {/* Modal Body (Scrollable on overflow) */}
+              <div className="text-gray-700 font-montserrat text-sm leading-relaxed space-y-4">
                 {modalContent === "privacy" ? (
                   <>
                     <b>Effective Date: 24/07/2025</b> <br />
@@ -115,7 +118,7 @@ const Footer = () => {
                     please contact us at info@elkoretech.com.
                   </>
                 )}
-              </p>
+              </div>
             </motion.div>
           </motion.div>
         )}
